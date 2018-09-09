@@ -1,0 +1,101 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    font-weight: 400;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+/* set the style for the map */
+.land {
+    fill: #ADD8E6;
+}
+
+.border {
+    fill:none;
+    stroke-width: 1px;
+}
+
+.interior {
+    stroke: white;
+}
+
+.exterior {
+    stroke: #bbbbbb;
+}
+
+.bubbles {
+    fill: brown;
+    fill-opacity: 0.5;
+    stroke: #fff;
+    stroke-width: 0.7;
+}
+.bubbles:hover {
+    stroke: #000;
+    fill-opacity: 1;
+    color: red;
+}
+
+/* set the style for the tooltip */
+.d3-tip {
+    line-height: 1.5;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.d3-tip.n:after {
+    margin: -2px 0 0 0;
+    top: 100%;
+    left: 0;
+}
+
+/* set the style for the slider */
+#sliderContainer {
+    width: 400px;
+}
+
+
+.slider {
+    -webkit-appearance: none;
+    width: 400px;
+    height: 8px;
+    border-radius: 1.5px;
+    background: transparent;
+    outline: none;
+    opacity: 0.5;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 0.8;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+}
+
+.slider-label {
+    font-family: 'Times New  Roman', Times, serif;
+    font-weight: bold;
+    font-size: 13px;
+    text-anchor: right;
+    display: inline;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- FIRST DRAFT OF MAP -->
+<head>
+  <meta charset="utf-8">
+  <title> Flight paths </title>
+
+  <!-- D3 from Murray == 4.5, taken from d3js.org -->
+  <script type="text/javascript" src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+  <script src="https://d3js.org/topojson.v2.min.js"></script>
+  <script src="https://d3js.org/d3-queue.v2.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+  <!-- javascript for tooltip is an external file -->
+  <script src="d3-tip.js"></script>
+
+  <!-- css for map is an external file -->
+  <link rel="stylesheet" type="text/css" href="tailnum_viz.css"/>
+</head>
+
+<body>
+
+  <!-- div to hold the drop down menu -->
+  <div id="buttons">
+      <p>
+        <br>
+        <b>Tail Number:</b>
+        <br>
+        <select id="tailnum">
+          <optgroup id="tailnumDropDown">
+            <option selected="true" disabled="disabled">
+                ------select a tail number ------
+            </option>
+          </optgroup>
+        </select
+      </p>
+  </div>
+
+  <!-- this is the slider that allows for the user to choose the month -->
+  <div id="sliderContainer"></div>
+
+  <!-- javascript for the map is an external file -->
+  <script type="text/javascript" src="tailnum_viz_v102.js"></script>
+
+</body>
+
+</html>
